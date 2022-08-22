@@ -2,6 +2,26 @@
         Custom Font
 *******************************/
 
+@font-face {
+    font-family: 'Bebasneue-regular';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url(../fonts/Helvetica.ttf);
+}
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url(../fonts/Helvetica-Bold.ttf);
+}
+@font-face {
+    font-family: 'open-sans';
+    src: url(../fonts/open-sans-regular.ttf);
+}
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url(../fonts/open-sans-extrabold.ttf);
+}
 
 
 
@@ -173,9 +193,42 @@ p{
 .black{
     color: var(--black);
 }
+.yellow{
+    color: var(--yellow);
+}
 
 
 /******************************* 
             Specifics
 *******************************/
 
+
+/* Header  */
+.header--logo {
+    width: 30%;
+}
+.header--menu {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header--icon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.site--header {
+    padding: 30px 0;
+}
+.social--icon li {
+    margin: 0 10px;
+}
+.main--menu li{
+    margin: 0 10px;
+}
+.main--menu li a{
+    font-family: 'Bebasneue-regular';
+    color: var(--yellow);
+    font-size: 3rem;
+}
+/* Header End */
