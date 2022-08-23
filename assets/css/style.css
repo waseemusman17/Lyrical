@@ -54,15 +54,6 @@ caption,th{
 }
 h1,h2,h3,h4,h5,h6{
 	font-size:100%;
-    text-transform: capitalize;
-}
-h1::first-letter,
-h2::first-letter,
-h3::first-letter,
-h4::first-letter,
-h5::first-letter,
-h6::first-letter{
-    text-transform: uppercase;
 }
 q:before,q:after{
 	content:'';
@@ -440,10 +431,122 @@ p,span{
     font-family: 'open-sans-extrabold';
 }
 .release--date {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 10px;
+    font-family: 'Helvetica-Bold';
 }
+
 /* Lastest Relase End*/
+
+
+
+/* Spotlight or Lyrical Feed */
+.sl--feed{
+    padding: 50px 0;
+}
+.spotlight--box {
+    width: 65%;
+}
+.lyrical--box {
+    width: 30%;
+    padding: 10px 20px;
+    background-color: var(--gray);
+}
+.bottom--title {
+    position: relative;
+    margin-bottom: 30px;
+}
+.bottom--title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--yellow);
+}
+.spotlight--feed {
+    width: 48%;
+    margin-bottom: 30px;
+}
+.spotlight--content {
+    gap: 0px;
+}
+
+.feed--img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.feed--info {
+    padding-left: 10px;
+    margin: 15px 0px 0px 30px;
+    border-left: 4px solid var(--yellow);
+}
+.feed--info > p {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+.feed--info > span {
+    font-size: 1.3rem;
+}
+.feed--more span {
+    font-size: 1.4rem;
+    font-family: 'Helvetica-Bold';
+}
+.feed--more a {
+    color: var(--yellow);
+    font-family: 'Helvetica-Bold';
+}
+.latest--release_box .release--item {
+    width: 48%;
+}
+.latest--release_box .release--title {
+    font-size: 2.4rem;
+}
+.latest--release {
+    padding-top: 50px;
+}
+.lyrical--feed_item {
+    width: 48%;
+    margin-bottom: 10px;
+}
+.instagram--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+.instagram--btn span {
+    padding-left: 10px;
+    line-height: initial;
+    font-size: 2rem;
+}
+.owl-nav .owl-prev {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background-color: transparent;
+}
+/* Spotlight or Lyrical Feed End */
+
+
 
 
 

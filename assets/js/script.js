@@ -15,23 +15,25 @@ $('.featured--slider').owlCarousel({
 $('.artist--slider').owlCarousel({
     loop:true,
     margin:40,
-    nav:false,
     dots:false,
     autoplay: true,
     // slideTransition: 'linear',
     // autoplaySpeed: 3000,
     smartSpeed: 500,
     items:4,
+    nav: true,
+    navText: ["<img src='./assets/img/left--icon.svg'>","<img src='./assets/img/right--icon.svg'>"]
 });
 
 $('.latest--release_slider').owlCarousel({
     loop:true,
     margin:30,
-    nav:false,
     dots:false,
     autoplay: true,
     // slideTransition: 'linear',
     // autoplaySpeed: 3000,
     smartSpeed: 500,
     items:4,
+    nav: true,
+    navText: ["<img src='./assets/img/left--icon.svg'>","<img src='./assets/img/right--icon.svg'>"]
 });
