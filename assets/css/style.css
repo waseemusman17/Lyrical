@@ -555,3 +555,232 @@ p,span{
     padding: 20px 0;
 }
 /* Footer End */
+
+.hamButton{
+    display: none;
+}
+
+/* Meida Query */
+
+@media(max-width:1366px){
+    h1{
+        font-size:5rem;
+    }
+    h2{
+        font-size:4rem;
+    }
+    h3{
+        font-size:3rem;
+    }   
+}
+
+
+@media(max-width:991px){
+    .trending--box {
+        gap: 15px;
+    }
+    .main--col {
+        width: 100%;
+    }
+    .main--col.trending--block {
+        margin-top: 50px;
+    }   
+    .header--logo {
+        order: 1;
+        width: 45%;
+    }
+    .header--icon {
+        order: 3;
+        width: 100%;
+    }
+    .header--menu {
+        order: 2;
+        width: 45%;
+    }
+    .owl-nav{
+        display: none;
+    }
+    .spotlight--box {
+        width: 100%;
+    }
+    
+    .lyrical--box {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .lyrical--feed_item {
+        width: 23%;
+    }
+    .playlist {
+        text-align: center;
+    }
+    .spotlight--feed{
+        width: 49%;
+    }
+    .case--box_item{
+        width: 49%;
+    }
+    .case--info_title{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:767px){
+
+    :root{
+        font-size: 8px;
+    }
+
+    .header--icon{
+        margin: 20px 0 0;
+    }
+    .hamButton {
+        position: relative;
+        display: block;
+        width: 25%;
+        z-index: 999;
+    }
+    .header--logo {
+        width: 50%;
+    }
+    .header--menu {
+        width: 25%;
+    }
+    .hamButton button {
+        display: block;
+        background: transparent;
+        border: 0px;
+        outline: none;
+        transition: 0.6s ease-in-out;
+        padding: 0px;
+    }   
+    .hamButton button span {
+        width: 30px;
+        height: 3px;
+        background: var(--yellow);
+        transition: 0.4s ease-in-out;
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+    .hamButton button span:last-child {
+        margin-bottom: 0px;
+    }
+
+    .hamButton button.active {
+        transform: rotate( 45deg );
+    }
+    .hamButton button.active span:nth-child(1) {
+        display: none;
+    }
+    .hamButton button.active span:nth-child(2) {
+        transform: translate(0px, 8px);
+    }
+    .hamButton button.active span:nth-child(3) {
+        transform: rotate( 90deg );
+    }
+    .social--icon li img {
+        width: 25px;
+    }
+    .social--icon li {
+        margin: 0 5px;
+    }
+
+
+
+    nav.header--menu_nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s all;
+    }
+    .header--menu_nav.menu-active {
+        visibility: visible;
+        opacity: 1;
+        background-color: var(--black);
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        transition: 0.5s all;
+    }
+    
+    ul.main--menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header--logo {
+        text-align: center;
+    }
+    .header--logo img {
+        max-width: 150px;
+    }
+    .search--icon img {
+        max-width: 30px;
+    }
+
+
+    .featured--item{
+        padding: 10px;
+    }
+
+    .trending--box_item{
+        width: 100%;
+    }
+    .main--col.trending--block {
+        margin-top: 20px;
+    }
+    .sl--feed {
+        padding-top: 0px;
+    }
+    .spotlight--feed {
+        width: 100%;
+    }
+    .feed--info{
+        margin: 15px 0px 0px 10px;
+    }
+    .latest--release_box .release--item {
+        width: 100%;
+    }
+    .latest--release_box{
+        gap:20px;
+    }
+    .lyrical--feed_item {
+        width: 48%;
+    }
+    .case--box_item {
+        width: 100%;
+    }
+    .case--img{
+        width: 40%;
+        min-height: 150px;
+    }
+    .case--info{
+        width: 60%;
+    }
+    .case--info_title{
+        font-size: 1.8rem;
+    }
+    .case--section{
+        padding-top: 0px;
+    }
+    .copyright--text {
+        margin-top: 10px;
+    }
+    .main--menu li {
+        margin: 10px;
+    }
+    html.menu-active {
+        overflow: hidden;
+    }
+    .featured--item{
+        height: 300px;
+    }
+}
