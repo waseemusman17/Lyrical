@@ -201,6 +201,16 @@ p,span{
     color: var(--yellow);
 }
 
+/* Site Button */
+.site--btn {
+    padding: 10px 20px;
+    background-color: var(--yellow);
+    color: var(--white);
+    border-radius: 6px;
+    line-height: initial;
+    text-transform: uppercase;
+}
+
 
 /******************************* 
             Specifics
@@ -244,7 +254,7 @@ p,span{
     padding: 50px 0;
 }
 .main--col {
-    width: 49%;
+    width: 49.5%;
 }
 .featured--title {
     padding-left: 15px;
@@ -284,10 +294,12 @@ p,span{
     display: flex;
     align-items: flex-end;
     padding: 30px;
+    background-size: cover;
+    background-position: center;
 }
 .item--category {
     display: inline-block;
-    padding: 10px;
+    padding: 7px 10px;
     background-color: var(--yellow);
     width: max-content;
     border-radius: 6px;
@@ -295,6 +307,7 @@ p,span{
     color: var(--white);
     margin-bottom: 10px;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 .trending--box_item {
     width: 49%;
@@ -324,3 +337,118 @@ p,span{
     opacity: 1;
 }
 /* Top Main Section End */
+
+
+/* IN CASE YOU WANT MORE */
+.case--section{
+    padding: 50px 0;
+}
+.case--box {
+    gap: 10px;
+}
+.case--box_item {
+    width: 49.5%;
+    padding: 10px;
+    border: 1px solid var(--yellow);
+}
+.case--img {
+    width: 30%;
+    min-height: 170px;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.case--info {
+    width: 70%;
+    padding: 10px 20px;
+}
+.case--info_title {
+    font-family: 'open-sans-extrabold';
+    font-size: 2.6rem;
+}
+.case--info_date {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.load--more{
+    margin-top: 50px;
+}
+
+/* IN CASE YOU WANT MORE End */
+
+
+
+/* ARTIST PROFILES */
+.artist--profile{
+    padding: 50px 0;
+}
+.artist--link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid var(--yellow);
+    border-radius: 6px;
+    font-family: 'Bebasneue-regular';
+    font-size: 3rem;
+    color: var(--white);
+    line-height: initial;
+}
+.artist--link:hover{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+.border--title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.border--title:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--yellow);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 0;
+}
+.border--title h1{
+    padding: 0 20px;
+    background-color: var(--black);
+    position: relative;
+    display: inline-block;
+}
+/* ARTIST PROFILES End */
+
+
+/* Lastest Relase */
+.release--item {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.release--title {
+    font-family: 'open-sans-extrabold';
+}
+.release--date {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+/* Lastest Relase End*/
+
+
+
+/* Footer */
+.site--footer {
+    padding: 20px 0;
+}
+/* Footer End */
