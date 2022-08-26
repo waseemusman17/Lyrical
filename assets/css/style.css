@@ -19,6 +19,10 @@
     src: url(../fonts/open-sans-regular.ttf);
 }
 @font-face {
+    font-family: 'open-sans-bold';
+    src: url(../fonts/open-sans-bold.ttf);
+}
+@font-face {
     font-family: 'open-sans-extrabold';
     src: url(../fonts/open-sans-extrabold.ttf);
 }
@@ -409,7 +413,8 @@ p,span{
     margin: auto;
     z-index: 0;
 }
-.border--title h1{
+.border--title h1,
+.border--title .innerTitle{
     padding: 0 20px;
     background-color: var(--black);
     position: relative;
@@ -547,9 +552,6 @@ p,span{
 /* Spotlight or Lyrical Feed End */
 
 
-
-
-
 /* Footer */
 .site--footer {
     padding: 20px 0;
@@ -560,7 +562,166 @@ p,span{
     display: none;
 }
 
-/* Meida Query */
+
+
+
+/******************************* 
+        Post Detail
+*******************************/
+
+.post--featuredImg {
+    max-width: 1000px;
+    margin: auto;
+}
+.post--featuredImg img {
+    width: 100%;
+}
+.post--detail {
+    padding: 50px 0;
+}
+.post--category {
+    text-align: center;
+    color: var(--yellow);
+    margin: 10px 0;
+    font-family: 'open-sans-bold';
+}
+.post--mainContent {
+    margin-top: 50px;
+    max-width: 900px;
+    margin: 50px auto 0;
+}
+.post--title {
+    font-family: 'open-sans-bold';
+    text-align: center;
+    margin: 10px 0;
+}
+.post--info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.post--info li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.post--info li span {
+    margin: 0px 10px;
+    font-family: 'open-sans';
+}
+.post--info li:last-child {
+    margin-right: 0;
+}
+.article--content {
+    margin-top: 50px;
+}
+.article--content p {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+.article--content iframe {
+    width: 100%;
+    margin: 20px 0;
+}
+.spotlight--box.related--box {
+    max-width: 850px;
+    margin: auto;
+}
+.related--post {
+    padding: 50px 0;
+}
+.social--share {
+    justify-content: center;
+    background-color: #000;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.share--icon {
+    margin-left: 15px;
+    align-items: center;
+}
+.share--icon.flex li {
+    margin: 0 10px;
+}
+.share--block{
+    margin-top: 50px;
+}
+.social--share h3 {
+    font-family: 'open-sans-extrabold';
+}
+
+
+
+/******************************* 
+    Artist Profile Page
+*******************************/
+.artist--img {
+    width: 30%;
+    text-align: center;
+}
+.artist--bio {
+    width: 65%;
+}
+.artist--bio .border--title h1 {
+    font-family: 'open-sans-extrabold';
+}
+.bio--list li {
+    font-family: 'open-sans';
+    color: var(--white);
+    margin: 20px 0;
+    font-size: 2rem;
+}
+.artist--img img {
+    max-width: 250px;
+    width: 100%;
+}
+.single--artistMoreInfo {
+    margin: 50px 0;
+}
+
+.single--artistMoreInfo h2 {
+    font-family: 'open-sans-extrabold';
+    margin: 10px 0;
+}
+
+.single--artistMoreInfo p {
+    font-size: 1.8rem;
+}
+
+
+/******************************* 
+        Search Page
+*******************************/
+.result--section {
+    padding: 50px 0;
+}
+.result--content {
+    max-width: 1000px;
+    margin: auto;
+}
+.result--content .border--title {
+    width: 90%;
+    margin: 0px auto 50px;
+}
+.result--content .border--title .innerTitle {
+    font-family: 'open-sans-extrabold';
+}
+
+
+
+.notFound--section{
+    padding:50px 0;
+}
+
+
+
+
+/******************************* 
+        Media Query
+*******************************/
 
 @media(max-width:1366px){
     h1{
@@ -782,5 +943,52 @@ p,span{
     }
     .featured--item{
         height: 300px;
+    }
+
+
+
+    .post--title {
+        font-size: 3rem;
+    }
+    .post--mainContent{
+        margin-top: 20px;
+    }
+    .article--content iframe{
+        height: 250px;
+    }
+    .share--block {
+        margin-top: 20px;
+    }
+    .social--share h3 {
+        font-size: 1.6rem;
+    }
+    .share--icon {
+        margin-left: 5px;
+    }
+    .share--icon.flex li img {
+        width: 20px;
+    }
+    .share--icon.flex li {
+        margin: 0 5px;
+    }
+    .related--post {
+        padding-top: 0;
+    }
+    
+    .article--content p{
+        font-size: 1.6rem;
+    }
+    .artist--img {
+        width: 100%;
+    }
+    .artist--bio {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .border--title h1{
+        font-size: 4rem;
+    }
+    .single--artistMoreInfo h2{
+        font-size: 3rem;
     }
 }
