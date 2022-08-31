@@ -656,7 +656,7 @@ ul.social--icon.flex li a img {
     margin-right: 20px;
 }
 ul.post--info li img {
-    max-width: 30px;
+    max-width: 25px;
 }
 .post--info li span {
     margin: 0px 10px;
@@ -676,8 +676,12 @@ ul.post--info li img {
     margin: 20px 0;
 }
 .spotlight--box.related--box {
-    max-width: 850px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
+}
+.related--box .feed--img{
+    height: 320px;
 }
 .related--post {
     padding: 50px 0;
@@ -770,15 +774,20 @@ ul.post--info li img {
 }
 
 
-
+/* Client New Changes */
 .notFound--section{
     padding:50px 0;
 }
-.m-show{
+.m-show,
+.mobile--readMore{
     display: none;
 }
-
-
+.result--section .feed--img {
+    height: 300px;
+}
+.sl--feed .spotlight--box .bottom--title {
+    padding-top: 10px;
+}
 
 
 /******************************* 
@@ -850,6 +859,18 @@ ul.post--info li img {
     .case--info_title{
         font-size: 2rem;
     }
+    .related--box .feed--img,
+    .result--section .feed--img {
+        height: 250px;
+    }
+    .result--content .border--title .innerTitle {
+        margin: 0 40px;
+    }
+    .result--content .border--title {
+        width: 100%;
+    }
+    
+    
 }
 
 @media(max-width:767px){
@@ -969,7 +990,7 @@ ul.post--info li img {
         width: 100%;
     }
     .main--col.trending--block {
-        margin-top: 20px;
+        margin-top: 40px;
     }
     .sl--feed {
         padding-top: 0px;
@@ -1026,7 +1047,7 @@ ul.post--info li img {
         overflow: hidden;
     }
     .featured--item{
-        height: 300px;
+        height: 250px;
     }
 
 
@@ -1143,5 +1164,41 @@ ul.post--info li img {
     .artist--img img {
         max-height: 300px;
         object-fit: contain;
+    }
+
+    /* Client New Changes */
+    .featured--slider{
+        border: 2px solid var(--white);
+    }
+    .trending--mobile .feed--more{
+        flex-direction: row;
+        
+    }
+    .trending--mobile .feed--more a{
+        width: auto;
+    }
+    .trending--mobile .feed--more a:before{
+        display: none;
+    }
+    .trending--mobile .feed--info{
+        border-left: 2px solid var(--yellow);
+        padding-left: 10px;
+    }
+    .artist--content{
+        margin-bottom: 30px;
+        border-bottom: 3px solid var(--yellow);
+    }
+    .mobile--readMore {
+        display: block;
+        font-family: 'open-sans-bold';
+        margin-top: 10px;
+        color: var(--yellow);
+    }
+    ul.post--info li img {
+        max-width: 15px;
+    }
+    .related--box .feed--img,
+    .result--section .feed--img {
+        height: 230px;
     }
 }
