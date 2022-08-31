@@ -227,6 +227,9 @@ p,span{
     display: flex;
     justify-content: flex-end;
 }
+.header--menu_nav {
+    margin-right: 10px;
+}
 .header--icon {
     width: 40%;
     display: flex;
@@ -311,7 +314,7 @@ ul.social--icon.flex li a img {
     padding: 7px 10px;
     background-color: var(--yellow);
     width: max-content;
-    border-radius: 6px;
+    border-radius: 4px;
     line-height: initial;
     color: var(--white);
     margin-bottom: 10px;
@@ -404,7 +407,11 @@ ul.social--icon.flex li a img {
 
 /* ARTIST PROFILES */
 .artist--profile{
-    padding: 50px 0;
+    padding: 50px 0 0;
+}
+.artist--content {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--yellow);
 }
 .artist--link {
     margin-top: 20px;
@@ -452,7 +459,7 @@ ul.social--icon.flex li a img {
 
 /* Lastest Relase */
 .release--item {
-    height: 300px;
+    height: 345px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -512,7 +519,7 @@ ul.social--icon.flex li a img {
 }
 
 .feed--img {
-    height: 250px;
+    height: 220px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -547,6 +554,7 @@ ul.social--icon.flex li a img {
 }
 .latest--release_box .release--item {
     width: 48%;
+    max-width: 345px;
 }
 .latest--release_box .release--title {
     font-size: 2.4rem;
@@ -747,7 +755,15 @@ ul.post--info li img {
 }
 .result--content .border--title {
     width: 90%;
-    margin: 0px auto 50px;
+    margin: 0px auto 30px;
+}
+.result--notFound {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+.result--notFound p{
+    color: var(--red);
+    font-family: 'open-sans-bold';
 }
 .result--content .border--title .innerTitle {
     font-family: 'open-sans-extrabold';
