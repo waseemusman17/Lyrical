@@ -175,7 +175,7 @@ p,span{
 .site--container{
     width: 100%;
     height: 100%;
-    max-width: 1280px;
+    max-width: 1180px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -201,7 +201,7 @@ p,span{
     padding: 10px 20px;
     background-color: var(--yellow);
     color: var(--white);
-    border-radius: 6px;
+    border-radius: 4px;
     line-height: initial;
     text-transform: uppercase;
     border: 1px solid var(--yellow);
@@ -254,6 +254,9 @@ ul.social--icon.flex li a img {
     font-family: 'Bebasneue-regular';
     color: var(--yellow);
     font-size: 2.5rem;
+}
+.site--header .site--container {
+    max-width: 1280px;
 }
 /* Header End */
 
@@ -486,10 +489,10 @@ ul.social--icon.flex li a img {
     padding: 50px 0;
 }
 .spotlight--box {
-    width: 65%;
+    width: 66%;
 }
 .lyrical--box {
-    width: 30%;
+    width: 29%;
     padding: 10px 20px;
     background-color: var(--gray);
 }
@@ -530,24 +533,25 @@ ul.social--icon.flex li a img {
 }
 .feed--info {
     padding-left: 10px;
-    margin: 15px 0px 0px 0px;
+    margin: 15px 0px 0px 25px;
     border-left: 2px solid var(--yellow);
 }
 .feed--info > p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 10px 0;
 }
 .feed--info > span {
     font-size: 1.3rem;
 }
 .feed--more span {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Helvetica-Bold';
 }
 .feed--more a {
     color: var(--yellow);
     font-family: 'Helvetica-Bold';
     border-bottom: 1px solid transparent;
+    font-size: 1.3rem;
 }
 .feed--more a:hover {
     border-bottom: 1px solid var(--yellow);
@@ -788,6 +792,9 @@ ul.post--info li img {
 .sl--feed .spotlight--box .bottom--title {
     padding-top: 10px;
 }
+.latest--release_slider .release--item{
+    height: 255px;
+}
 
 
 /******************************* 
@@ -805,9 +812,6 @@ ul.post--info li img {
         font-size:3rem;
     }  
     
-    .site--container{
-        max-width: 1140px;
-    }
 }
 
 
@@ -1200,5 +1204,27 @@ ul.post--info li img {
     .related--box .feed--img,
     .result--section .feed--img {
         height: 230px;
+    }
+    .featured--slider .owl-dots button.owl-dot span{
+        background-color: var(--white) !important;
+    }
+    .site--btn,
+    .item--category{
+        border-radius: 3px;
+    }
+    .case--img{
+        padding: 13px;
+    }
+    .artist--profile {
+        padding: 0;
+    }
+    .trending--mobile .feed--info{
+        margin: 15px 0px 0px 25px;
+    }
+    .spotlight--feed:last-child{
+        margin-bottom: 0px;
+    }
+    .feed--img{
+        padding: 15px;
     }
 }
