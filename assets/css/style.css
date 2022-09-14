@@ -462,7 +462,7 @@ ul.social--icon.flex li a img {
 
 /* Lastest Relase */
 .release--item {
-    height: 345px;
+    height: 360px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -558,7 +558,7 @@ ul.social--icon.flex li a img {
 }
 .latest--release_box .release--item {
     width: 48%;
-    max-width: 345px;
+    max-width: 360px;
 }
 .latest--release_box .release--title {
     font-size: 2.4rem;
@@ -1110,7 +1110,7 @@ ul.post--info li img {
         width: 100%;
         position: relative;
         background-color: var(--black);
-        z-index: 999;
+        z-index: 9;
         border-bottom: 0px !important;
     }
     .feed--more a:before {
